@@ -128,6 +128,7 @@
     "test": "jest test/*.test.ts*",
     "test:watch": "jest --watch test/*.test.ts*",
     "start": "DEMO_APP=true webpack serve --https --host prod.foo.redhat.com --port 1337 --config webpack.dev.js",
+    "start:http": "DEMO_APP=true webpack serve --host prod.foo.redhat.com --port 8080 --config webpack.dev.js",
     "start:federate": "webpack serve --host localhost --port 9002 --config webpack.dev.js",
     "start:e2e": "E2E_APP=true webpack --mode production --config webpack.prod.js && npm run serve",
     "serve": "serve dist -s -p 3001",
